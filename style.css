@@ -1,0 +1,434 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(40, 10%, 94%);
+}
+.Focus{
+    width: 400px;
+    height: 225px;
+    background-color:#ffffff;
+    margin:32px 105px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 4px;
+    position: relative;
+}
+
+#currentTime{
+    font-size: 62px;
+    font-family: sans-serif;
+    margin-top: 10px;
+  }
+
+  .livetimer{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  
+  }
+  .promo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  #promodo{
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    margin-right: 10px;
+    cursor: pointer;
+    
+  }
+
+  #promomsg{
+    display: none;
+  }
+  #break{
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+ #clock{
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .calen{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+ 
+.proTime{
+    font-size: 62px;
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+
+
+.Todocard {
+
+  width: 400px;
+  height: 400px;
+  margin-left: 105px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ffffff;
+  position: relative;
+  
+}
+
+#to-do-btn {
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  border: 0.5px solid black; /* Changed to '0.5px' */
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#to-do-btn:hover {
+  background-color: #000000; /* Change to the background color you desire */
+  color: #ffffff; /* Change to the text color you desire */
+  border: 1px solid black; /* Increased border width on hover */
+}
+
+.newtodoitem {
+  display: none;
+  margin-top: 10px;
+}
+
+#input {
+  background-color:hsl(0, 0%, 100%) ;
+  padding: 10px;
+  border-radius: 3px;
+  border: 0.5px solid black;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  margin-right: 8px;
+  width: 260px;
+  margin-left: 5px;
+}
+
+
+
+ul {
+  /* background-color: antiquewhite; */
+  width: 400px;
+  list-style-type: none;
+  padding: 0;
+  margin-top: -30px;
+  padding-bottom: 15px;
+  
+}
+
+.inputbox {
+  padding: 10px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+li{
+  border: 0.5px solid black;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  border-radius: 3px ;
+  font-size: 18px;
+  margin: 4px;
+  width: 78%;
+  background-color: hsl(0, 0%, 100%);
+  margin-left: 45px;
+  display: flex;
+  justify-content:space-between;
+  margin-top: 10px;
+
+}
+.checkbox{
+  vertical-align: middle;
+ }
+
+ input[type='checkbox'].checkbox {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  border: none;
+
+}
+.dbtn{
+  background-color: #000000;
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 3px;
+  color: #ffffff;
+}
+
+.Task-input{
+  width: 400px;
+  margin-left: 32%;
+  border: none;
+  border-radius: 4px;
+  background-color: #ffffff;
+  height: 225px;
+  margin-top: -670px;
+  padding: 20px;
+  text-align: center;
+}
+
+  input[type=text], select {
+    width: 90%;
+    padding: 12px 12px;
+    margin: 8px 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  #content{
+    width: 90%;
+    height: 200px;
+    padding: 12px 12px;
+    margin: 8px 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;
+  }
+#addTask{
+  width: 90%;
+    padding: 12px 12px;
+    margin: 8px 8px;
+    display: inline-block;
+    border: 1px solid #2c2323;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: black;
+    color: #ffffff;
+}
+.Task-box{
+  width: 400px;
+  margin-left: 34.5%;
+  border: none;
+  border-radius: 4px;
+  background-color: #ffffff;
+  height: 150px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  top:-645px;
+  margin-bottom: 10px;
+}
+#openTask{
+  padding: 8px;
+  border: none;
+  border-radius: 3px;
+  background-color: black;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: 20px;
+
+}
+
+#openTask:hover{
+  border: 0.5px solid black;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+
+}
+
+
+#Task-card-title{
+  padding: 5px;
+}
+
+
+.modal {
+ 
+  display: none;
+  position: absolute; 
+  top: 55%; 
+  left: 47.5%;
+  transform: translate(-50%, -50%); 
+  width: 400px; 
+  max-width: 400px; 
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+
+  z-index: 1000;
+
+  
+}
+
+.modal-content {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.2);
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: -5px;
+  right: 5px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+form{
+  background-color: #ffffff;
+}
+.Taskcard{
+  background-color: #ffffff;
+  margin-top: 15px;
+  padding: 20px;
+  width: 400px;
+}
+.Taskdisplay{
+  
+  width: 400px;
+  margin-left: 34.5%;
+  top:-640px;
+  border: none;
+  border-radius: 4px;
+  /* background-color: #e2e2e2; */
+  height: 480px;
+  position: relative;
+
+}
+
+.Taskcard h4{
+  color: black;
+  font-size: 18px;
+  font-family: serif;
+  padding: 5px;
+}
+.Taskcard p{
+  color: black;
+  font-size: 17px;
+  font-family: serif;
+  padding: 4px;
+} 
+img{
+  width: 400px;
+  height: 350px;
+  border: #000000;
+}
+
+input[type='checkbox'].checkbox {
+  width: 35px;
+  height: 25px;
+  border: none;
+  margin-bottom: 5px;
+}
+.listinputbox{
+  background-color: #ffffff;
+  width: 500px;
+  height: 150px;
+  margin-left: 62%;
+  margin-top: -83.6%;
+  margin-right: 72px;
+  border-radius: 3px;
+  text-align: center;
+  padding: 15px;
+}
+
+#addlink{
+  width: 90%;
+  padding: 12px 12px;
+  margin: 8px 8px;
+  display: inline-block;
+  border: 1px solid #2c2323;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: black;
+  color: #ffffff;
+}
+#linkdisplay{
+  width: 500px;
+  margin-left: 62.1%;
+  top:15px;
+  border: none;
+  border-radius: 4px;
+  /* background-color: #ffffff; */
+  height: 480px;
+}
+
+.linkcard {
+  display: flex;
+  background-color: white;
+  width: 500px;
+  border-radius: 4px;
+  margin-top: 15px;
+}
+
+.linkcard img {
+  max-width: 135px;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.linkcard .content {
+  flex: 1;
+  padding: 10px;
+  background-color: #ffffff;
+}
+
+.linkcard h3 {
+  margin: 0 0 15px;
+  font-size: 16px;
+  color: #333;
+}
+
+.linkcard p {
+  margin: 0;
+  color: #777;
+  padding: 5px;
+}
+
+.link-close{
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;  
+  margin-left: 90%;
+}
+.task-close{
+  position: absolute;
+  top: -5px;
+  right: 5px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#linkpic{
+  width: 500px;
+  margin-top: 15px;
+}
