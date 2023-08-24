@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="Focus">
+        <div class="calen">
+            <p id="greet">Morning</p>
+            <p id ="date"> wed ,15 june</p>
+        </div>
+        <div class="livetimer">
+            <p id="currentTime">00:00:00</p>
+        </div>
+        <div class="promo">
+            <button id="promodo">Pomodoro</button>
+            <!-- <button id="break">Long break </button> -->
+            <button id="clock">Live Clock</button>
+        </div>
+    </div>
+    <div class="Todocard">
+        <div class="inputbox">
+            <input type="text" id="input" placeholder="Enter a new to-do" autocomplete="off">
+        <button id="to-do-btn">Add</button>
+        </div>
+        <ul id="listcont">
+            <!-- <li>om jadhav</li> -->
+        </ul>
+        <img src="Assests/hand-holding-writing-checklist-application-form-document-clipboard-white-background-3d-illustration-removebg-preview.png" id="pic"/>
+    </div>
+    <div class="Task-box">
+       <h3 id="Task-card-title">Your Path to Productivity!</h3>
+        <button id="openTask">New Task</button>
+    </div>
+    <div class="Taskdisplay" id="Taskdisplay">
+        <img id ="taskpic" src="https://i.pinimg.com/564x/7c/21/c0/7c21c0fc8bd8fd0e9d18f6b63bedd943.jpg" style=" height:480px"/>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+           <form>
+              <input  type="text" id="title" placeholder="Title" autocomplete="off">
+                <textarea   id="content" placeholder="Task" ></textarea>
+             <button id="addTask">New task</button>
+           </form> 
+         
+          </div>
+        </div>
+
+        <div class="listinputbox"  >
+            <input  type="text" id="link" placeholder="Link" autocomplete="off">
+             <button id="addlink" onclick="fetchLink()">Create Bookmark</button>
+        </div>
+        <div id="linkdisplay">
+            <img id ="linkpic" src="https://images.unsplash.com/photo-1606318621597-c057f7d4926e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=580&q=80" style=" height:480px"/>
+        </div>
+        
+     
+
+<script src="App.js"></script> 
+</body>
+</html>
